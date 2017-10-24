@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/area.png</file>
+        <file>images/constrution.png</file>
+        <file>images/load.png</file>
+        <file>images/parameter.png</file>
+        <file>images/system.png</file>
+        <file>images/tower.png</file>
+        <file>images/warning.png</file>
+        <file>images/workrecord.png</file>
+        <file>images/skin.png</file>
+    </qresource>
+</RCC>
