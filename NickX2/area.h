@@ -19,4 +19,4 @@ private:
     Ui::area *ui;
 };
 
-#endif // AREA_H
+#endif // AREA_H//
