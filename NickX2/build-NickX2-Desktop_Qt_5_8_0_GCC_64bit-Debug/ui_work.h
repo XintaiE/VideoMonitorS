@@ -123,6 +123,8 @@ public:
         if (work->objectName().isEmpty())
             work->setObjectName(QStringLiteral("work"));
         work->resize(639, 436);
+        work->setMinimumSize(QSize(639, 436));
+        work->setMaximumSize(QSize(639, 436));
         label_3 = new QLabel(work);
         label_3->setObjectName(QStringLiteral("label_3"));
         label_3->setGeometry(QRect(15, 107, 611, 17));
@@ -150,6 +152,7 @@ public:
         QTableWidgetItem *__qtablewidgetitem4 = new QTableWidgetItem();
         tableWidget->setHorizontalHeaderItem(4, __qtablewidgetitem4);
         tableWidget->setObjectName(QStringLiteral("tableWidget"));
+        tableWidget->setEnabled(true);
         tableWidget->setGeometry(QRect(0, 0, 611, 301));
         layoutWidget_3 = new QWidget(tab);
         layoutWidget_3->setObjectName(QStringLiteral("layoutWidget_3"));

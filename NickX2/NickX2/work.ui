@@ -10,6 +10,18 @@
     <height>436</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>639</width>
+    <height>436</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>639</width>
+    <height>436</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
@@ -46,6 +58,9 @@
         <string>防碰记录</string>
        </attribute>
        <widget class="QTableWidget" name="tableWidget">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
         <property name="geometry">
          <rect>
           <x>0</x>
