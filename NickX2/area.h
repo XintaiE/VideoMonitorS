@@ -1,6 +1,6 @@
 #ifndef AREA_H
 #define AREA_H
-/*******/
+/***主界面****/
 #include <QWidget>
 
 namespace Ui {
