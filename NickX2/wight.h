@@ -1,3 +1,4 @@
+/**************/
 #ifndef WIGHT_H
 #define WIGHT_H
 #include <QToolButton>
