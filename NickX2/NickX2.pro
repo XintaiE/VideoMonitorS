@@ -28,7 +28,8 @@ SOURCES += main.cpp\
     tower.cpp \
     construction.cpp \
     setsystem.cpp \
-    Loadcpp/load3DS.cpp
+    Loadcpp/load3DS.cpp \
+    Loadcpp/meshModel.cpp
 
 HEADERS  += wight.h \
     work.h \
@@ -39,7 +40,8 @@ HEADERS  += wight.h \
     tower.h \
     construction.h \
     setsystem.h \
-    include/HCNetSDK.h
+    include/HCNetSDK.h \
+    include/meshModel.h
 
 FORMS    += wight.ui \
     work.ui \

@@ -18,28 +18,25 @@ wight::wight(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::wight)
 {
-
     ui->setupUi(this);
     this->initFrom();
     this->initDatetime();
     this->initTooltip();
-
-
 }
 
 void wight::initDatetime()   //时间初始化
 {
-
     QTimer *time = new QTimer(this);
     connect(time,SIGNAL(timeout()),this,SLOT(setcurrertime()));
     time->start(1000);
-
 }
+
 void wight::initFrom()  //界面初始化
 {
-/*    this->setWindowFlags(Qt::FramelessWindowHint | Qt::WindowSystemMenuHint |
+#if 1
+   this->setWindowFlags(Qt::FramelessWindowHint | Qt::WindowSystemMenuHint |
                          Qt::WindowMinMaxButtonsHint);
-*/
+#endif
     m_work = new work;
     m_parameter = new parameter;
     m_load = new load;
@@ -157,4 +154,25 @@ void wight::on_tbconstruction_clicked()
 void wight::on_tbcn_clicked()
 {
 
+}
+
+void wight::mousePressEvent(QMouseEvent *event)
+{
+    if(event->button() == Qt::LeftButton){
+        m_bpressed = true;
+        m_point = event->pos();
+    }
+}
+
+void wight::mouseMoveEvent(QMouseEvent *event)
+{
+    if(m_bpressed){
+        move(event->pos() - m_point + pos());
+    }
+}
+
+void wight::mouseReleaseEvent(QMouseEvent *event)
+{
+    Q_UNUSED(event);
+    m_bpressed = false;
 }

@@ -17,9 +17,7 @@
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
-#include <QtWidgets/QMenuBar>
 #include <QtWidgets/QStatusBar>
-#include <QtWidgets/QToolBar>
 #include <QtWidgets/QToolButton>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
@@ -50,8 +48,6 @@ public:
     QToolButton *tbwork;
     QToolButton *tbsystem;
     QToolButton *tbtower;
-    QMenuBar *menuBar;
-    QToolBar *mainToolBar;
     QStatusBar *statusBar;
 
     void setupUi(QMainWindow *wight)
@@ -74,7 +70,7 @@ public:
         ltower->setGeometry(QRect(0, 20, 81, 17));
         ltext = new QLabel(centralWidget);
         ltext->setObjectName(QStringLiteral("ltext"));
-        ltext->setGeometry(QRect(240, 7, 67, 31));
+        ltext->setGeometry(QRect(240, 10, 67, 31));
         verticalLayoutWidget = new QWidget(centralWidget);
         verticalLayoutWidget->setObjectName(QStringLiteral("verticalLayoutWidget"));
         verticalLayoutWidget->setGeometry(QRect(0, 40, 631, 161));
@@ -133,13 +129,6 @@ public:
         tbtower->setObjectName(QStringLiteral("tbtower"));
         tbtower->setGeometry(QRect(400, 370, 71, 41));
         wight->setCentralWidget(centralWidget);
-        menuBar = new QMenuBar(wight);
-        menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 635, 28));
-        wight->setMenuBar(menuBar);
-        mainToolBar = new QToolBar(wight);
-        mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
-        wight->addToolBar(Qt::TopToolBarArea, mainToolBar);
         statusBar = new QStatusBar(wight);
         statusBar->setObjectName(QStringLiteral("statusBar"));
         wight->setStatusBar(statusBar);

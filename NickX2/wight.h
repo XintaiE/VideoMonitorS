@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QString>
 #include <QTimer>
+#include <QMouseEvent>
 class work;
 class parameter;
 class load;
@@ -46,9 +47,15 @@ private:
     void initTooltip();   //tip提示
     void setToolButtonStyle(QToolButton*tbn,const QString &text,int textsize,const QString iconName); //设置按钮样式
 
+//以下三个函数实现无边框可移动
+protected:
+    void mousePressEvent(QMouseEvent *event);
+    void mouseMoveEvent(QMouseEvent *event);
+    void mouseReleaseEvent(QMouseEvent *event);
+
 private slots:
     void setcurrertime(); //设置当前时间
-private slots:
+
     void on_tbwork_clicked();
 
     void on_tbparameter_clicked();
@@ -77,6 +84,9 @@ private:
     tower *m_tower;
     setsystem *m_system;
     construction *m_constrution;
+
+    bool m_bpressed;
+    QPoint m_point;
 
 };
 

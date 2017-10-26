@@ -58,7 +58,8 @@ SOURCES       = main.cpp \
 		tower.cpp \
 		construction.cpp \
 		setsystem.cpp \
-		Loadcpp/load3DS.cpp qrc_images.cpp \
+		Loadcpp/load3DS.cpp \
+		Loadcpp/meshModel.cpp qrc_images.cpp \
 		moc_wight.cpp \
 		moc_work.cpp \
 		moc_parameter.cpp \
@@ -79,6 +80,7 @@ OBJECTS       = main.o \
 		construction.o \
 		setsystem.o \
 		load3DS.o \
+		meshModel.o \
 		qrc_images.o \
 		moc_wight.o \
 		moc_work.o \
@@ -268,7 +270,8 @@ DIST          = /opt/Qt5.8.0/5.8/gcc_64/mkspecs/features/spec_pre.prf \
 		tower.h \
 		construction.h \
 		setsystem.h \
-		include/HCNetSDK.h main.cpp \
+		include/HCNetSDK.h \
+		include/meshModel.h main.cpp \
 		wight.cpp \
 		work.cpp \
 		parameter.cpp \
@@ -278,7 +281,8 @@ DIST          = /opt/Qt5.8.0/5.8/gcc_64/mkspecs/features/spec_pre.prf \
 		tower.cpp \
 		construction.cpp \
 		setsystem.cpp \
-		Loadcpp/load3DS.cpp
+		Loadcpp/load3DS.cpp \
+		Loadcpp/meshModel.cpp
 QMAKE_TARGET  = NickX2
 DESTDIR       = 
 TARGET        = NickX2
@@ -661,8 +665,8 @@ distdir: FORCE
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents images.qrc $(DISTDIR)/
 	$(COPY_FILE) --parents /opt/Qt5.8.0/5.8/gcc_64/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents wight.h work.h parameter.h load.h warning.h area.h tower.h construction.h setsystem.h include/HCNetSDK.h $(DISTDIR)/
-	$(COPY_FILE) --parents main.cpp wight.cpp work.cpp parameter.cpp load.cpp warning.cpp area.cpp tower.cpp construction.cpp setsystem.cpp Loadcpp/load3DS.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents wight.h work.h parameter.h load.h warning.h area.h tower.h construction.h setsystem.h include/HCNetSDK.h include/meshModel.h $(DISTDIR)/
+	$(COPY_FILE) --parents main.cpp wight.cpp work.cpp parameter.cpp load.cpp warning.cpp area.cpp tower.cpp construction.cpp setsystem.cpp Loadcpp/load3DS.cpp Loadcpp/meshModel.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents wight.ui work.ui parameter.ui load.ui warning.ui area.ui tower.ui construction.ui setsystem.ui $(DISTDIR)/
 
 
@@ -822,6 +826,7 @@ moc_wight.cpp: /opt/Qt5.8.0/5.8/gcc_64/include/QtWidgets/QToolButton \
 		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/QTimer \
 		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qtimer.h \
 		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qbasictimer.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/QMouseEvent \
 		wight.h \
 		moc_predefs.h \
 		/opt/Qt5.8.0/5.8/gcc_64/bin/moc
@@ -1838,6 +1843,7 @@ main.o: main.cpp wight.h \
 		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/QTimer \
 		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qtimer.h \
 		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qbasictimer.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/QMouseEvent \
 		/opt/Qt5.8.0/5.8/gcc_64/include/QtWidgets/QApplication \
 		/opt/Qt5.8.0/5.8/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qcoreapplication.h \
@@ -1959,6 +1965,7 @@ wight.o: wight.cpp wight.h \
 		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/QTimer \
 		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qtimer.h \
 		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qbasictimer.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/QMouseEvent \
 		ui_wight.h \
 		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/QVariant \
 		/opt/Qt5.8.0/5.8/gcc_64/include/QtWidgets/QAction \
@@ -1997,13 +2004,8 @@ wight.o: wight.cpp wight.h \
 		/opt/Qt5.8.0/5.8/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.8.0/5.8/gcc_64/include/QtWidgets/QLabel \
 		/opt/Qt5.8.0/5.8/gcc_64/include/QtWidgets/qlabel.h \
-		/opt/Qt5.8.0/5.8/gcc_64/include/QtWidgets/QMenuBar \
-		/opt/Qt5.8.0/5.8/gcc_64/include/QtWidgets/qmenubar.h \
-		/opt/Qt5.8.0/5.8/gcc_64/include/QtWidgets/qmenu.h \
 		/opt/Qt5.8.0/5.8/gcc_64/include/QtWidgets/QStatusBar \
 		/opt/Qt5.8.0/5.8/gcc_64/include/QtWidgets/qstatusbar.h \
-		/opt/Qt5.8.0/5.8/gcc_64/include/QtWidgets/QToolBar \
-		/opt/Qt5.8.0/5.8/gcc_64/include/QtWidgets/qtoolbar.h \
 		/opt/Qt5.8.0/5.8/gcc_64/include/QtWidgets/QVBoxLayout \
 		/opt/Qt5.8.0/5.8/gcc_64/include/QtWidgets/QWidget \
 		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/QDateTime \
@@ -3311,6 +3313,145 @@ load3DS.o: Loadcpp/load3DS.cpp include/Load3DS.h \
 		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qtouchdevice.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o load3DS.o Loadcpp/load3DS.cpp
+
+meshModel.o: Loadcpp/meshModel.cpp /opt/Qt5.8.0/5.8/gcc_64/include/QtGui/QImage \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qimage.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qtguiglobal.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qglobal.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qconfig-bootstrapped.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qconfig.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qtcore-config.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qsystemdetection.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qprocessordetection.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qcompilerdetection.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qtypeinfo.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qsysinfo.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qlogging.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qflags.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qtypetraits.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qatomic.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qbasicatomic.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qatomic_bootstrap.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qgenericatomic.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qatomic_cxx11.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qatomic_msvc.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qglobalstatic.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qmutex.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qnumeric.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qversiontagging.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qtgui-config.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qcolor.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qrgb.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qnamespace.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qstringlist.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qlist.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qalgorithms.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qiterator.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qrefcount.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qarraydata.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qhashfunctions.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qchar.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qpair.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qbytearraylist.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qbytearray.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qstring.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qstringbuilder.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qregexp.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qstringmatcher.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qrgba64.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qpaintdevice.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qwindowdefs.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qobjectdefs.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qobjectdefs_impl.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qwindowdefs_win.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qrect.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qmargins.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qsize.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qpoint.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qpixelformat.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qtransform.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qmatrix.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qpolygon.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qvector.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qregion.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qdatastream.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qscopedpointer.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qiodevice.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qobject.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qcoreevent.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qmetatype.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qvarlengtharray.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qcontainerfwd.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qobject_impl.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qline.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qpainterpath.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtOpenGL/QGLWidget \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtOpenGL/qgl.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qopengl.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qt_windows.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qopengles2ext.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qopenglext.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtWidgets/qwidget.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtWidgets/qtwidgets-config.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qpalette.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qbrush.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qpixmap.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qsharedpointer.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qshareddata.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qhash.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qsharedpointer_impl.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qfont.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qfontmetrics.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qfontinfo.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtWidgets/qsizepolicy.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qcursor.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qkeysequence.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qevent.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qvariant.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qmap.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qdebug.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qtextstream.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qlocale.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qset.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qcontiguouscache.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qurl.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qurlquery.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qfile.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qfiledevice.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qvector2d.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qtouchdevice.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qpaintengine.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qpainter.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qtextoption.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtOpenGL/qglcolormap.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtOpenGL/qtopenglglobal.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/QSurfaceFormat \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qsurfaceformat.h \
+		include/meshModel.h \
+		include/Load3DS.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/QVector \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/QVector2D \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/QVector3D \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qvector3d.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/QOpenGLFunctions_3_0 \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qopenglfunctions_3_0.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/QOpenGLVersionFunctions \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qopenglversionfunctions.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qopenglcontext.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/QObject \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/QScopedPointer \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/QOpenGLShaderProgram \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qopenglshaderprogram.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qvector4d.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qmatrix4x4.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qquaternion.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtGui/qgenericmatrix.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/QCoreApplication \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qcoreapplication.h \
+		/opt/Qt5.8.0/5.8/gcc_64/include/QtCore/qeventloop.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o meshModel.o Loadcpp/meshModel.cpp
 
 qrc_images.o: qrc_images.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qrc_images.o qrc_images.cpp
