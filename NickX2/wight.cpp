@@ -33,7 +33,7 @@ void wight::initDatetime()   //时间初始化
 
 void wight::initFrom()  //界面初始化
 {
-#if 1
+#if 0
    this->setWindowFlags(Qt::FramelessWindowHint | Qt::WindowSystemMenuHint |
                          Qt::WindowMinMaxButtonsHint);
 #endif
@@ -46,18 +46,18 @@ void wight::initFrom()  //界面初始化
     m_system = new setsystem;
     m_constrution = new construction;
 
-   /*
 
-    setToolButtonStyle(ui->tbwork,tr("工作记录"),E_NORMAL,":/images/workrecord.png");
-    setToolButtonStyle(ui->tbparameter,tr("参数标定"),E_NORMAL,":images/parameter.png");
-    setToolButtonStyle(ui->tbload,tr("负荷表"),E_NORMAL,":/images/load.png");
-    setToolButtonStyle(ui->tbwarning,tr("报警设置"),E_NORMAL,":/images/warning.png");
-    setToolButtonStyle(ui->tbarea,tr("区域设置"),E_NORMAL,":/images/area.png");
-    setToolButtonStyle(ui->tbtower,tr("塔机设置"),E_NORMAL,":/images/tower.png");
-    setToolButtonStyle(ui->tbsystem,tr("系统设置"),E_NORMAL,":/images/system.png");
-    setToolButtonStyle(ui->tbconstruction,tr("工地设置"),E_NORMAL,":/images/constrution.png");
 
-*/
+    setToolButtonStyle(ui->tbwork,E_NORMAL,":/icon/Z_Gz.png");
+    setToolButtonStyle(ui->tbparameter,E_NORMAL,":/icon/Z_Cs.png");
+    setToolButtonStyle(ui->tbload,E_NORMAL,":/icon/Z_Fh.png");
+    setToolButtonStyle(ui->tbwarning,E_NORMAL,":/icon/Z_Bj.png");
+    setToolButtonStyle(ui->tbarea,E_NORMAL,":/icon/Z_Qy.png");
+    setToolButtonStyle(ui->tbtower,E_NORMAL,":/icon/Z_Tj.png");
+    setToolButtonStyle(ui->tbsystem,E_NORMAL,":/icon/Z_Xt.png");
+    setToolButtonStyle(ui->tbconstruction,E_NORMAL,":/icon/Z_Gd.png");
+
+
 }
 void wight::initTooltip() //tip显示
 {
@@ -79,9 +79,9 @@ void wight::setcurrertime()  //设置显示当前时间
     QString timec = ctime.toString("yyyy-MM-dd hh:mm:ss");
     ui->ltime->setText(timec);
 }
-void wight ::setToolButtonStyle(QToolButton *tbn, const QString &text, int textsize, const QString iconName)  //按钮样式
+void wight ::setToolButtonStyle(QToolButton *tbn, int textsize, const QString iconName)  //按钮样式
 {
-    tbn->setText(text);
+   // tbn->setText(text);
 
     if(textsize == E_BIG)
     {
@@ -91,10 +91,10 @@ void wight ::setToolButtonStyle(QToolButton *tbn, const QString &text, int texts
         tbn->setFont(QFont("文泉驿雅黑",8,QFont::Normal));
     }
     tbn->setAutoRaise(true);
-    tbn->setFixedSize(60,78);
+    tbn->setFixedSize(50,50);
     tbn->setIcon(QPixmap(QString("%1").arg(iconName)));
     tbn->setIconSize(QPixmap(QString("%1").arg(iconName)).size());
-    tbn->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
+   // tbn->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
 
 
 

@@ -1,13 +1,18 @@
 <RCC>
     <qresource prefix="/">
-        <file>images/area.png</file>
-        <file>images/constrution.png</file>
-        <file>images/load.png</file>
-        <file>images/parameter.png</file>
-        <file>images/system.png</file>
-        <file>images/tower.png</file>
-        <file>images/warning.png</file>
-        <file>images/workrecord.png</file>
-        <file>images/skin.png</file>
+        <file>icon/Z_An.png</file>
+        <file>icon/Z_Bj.png</file>
+        <file>icon/Z_Cs.png</file>
+        <file>icon/Z_Fh.png</file>
+        <file>icon/Z_Gd.png</file>
+        <file>icon/Z_Gz.png</file>
+        <file>icon/Z_Qy.png</file>
+        <file>icon/Z_Tj.png</file>
+        <file>icon/Z_Tq.png</file>
+        <file>icon/Z_Xh.png</file>
+        <file>icon/Z_Xt.png</file>
+        <file>icon/Z_Yj.png</file>
+        <file>icon/Z_Ym.png</file>
+        <file>icon/Z_Yy.png</file>
     </qresource>
 </RCC>

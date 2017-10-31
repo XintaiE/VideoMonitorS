@@ -46,7 +46,7 @@ private:
     void initFrom();  //界面样式初始化
     void initDatetime();  //初始化当前时间
     void initTooltip();   //tip提示
-    void setToolButtonStyle(QToolButton*tbn,const QString &text,int textsize,const QString iconName); //设置按钮样式
+    void setToolButtonStyle(QToolButton*tbn,int textsize,const QString iconName); //设置按钮样式
 
 //以下三个函数实现无边框可移动
 protected:
