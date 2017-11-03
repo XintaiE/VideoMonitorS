@@ -696,11 +696,13 @@ compiler_rcc_clean:
 	-$(DEL_FILE) qrc_images.cpp
 qrc_images.cpp: images.qrc \
 		../Qt5.8.0/5.8/gcc_64/bin/rcc \
+		css/style.css \
 		icon/Z_Gd.png \
 		icon/Z_Bj.png \
 		icon/Z_Xh.png \
 		icon/Z_Qy.png \
 		icon/Z_Tq.png \
+		icon/Z_Hs.png \
 		icon/Z_Xt.png \
 		icon/Z_Yj.png \
 		icon/Z_Fh.png \
@@ -709,7 +711,21 @@ qrc_images.cpp: images.qrc \
 		icon/Z_Cs.png \
 		icon/Z_Tj.png \
 		icon/Z_Yy.png \
-		icon/Z_Gz.png
+		icon/Z_Gz.png \
+		widget/Z_Gd.png \
+		widget/Z_Ck2.png \
+		widget/Z_Sjym.png \
+		widget/Z_Lj.png \
+		widget/Z_Mh.png \
+		widget/Z_Sjdm.png \
+		widget/Z_Fd.png \
+		widget/Z_Spdm.png \
+		widget/Z_Hz.png \
+		widget/Z_Zl.png \
+		widget/Z_Ck.png \
+		widget/Z_Xj.png \
+		widget/Z_Tb.png \
+		widget/Z_Fs.png
 	/home/nickx2/Qt5.8.0/5.8/gcc_64/bin/rcc -name images images.qrc -o qrc_images.cpp
 
 compiler_moc_predefs_make_all: moc_predefs.h
@@ -1987,17 +2003,21 @@ wight.o: wight.cpp wight.h \
 		../Qt5.8.0/5.8/gcc_64/include/QtGui/qinputmethod.h \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QButtonGroup \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qbuttongroup.h \
-		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QGridLayout \
-		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qgridlayout.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QFormLayout \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qformlayout.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QLayout \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qlayout.h \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qlayoutitem.h \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qboxlayout.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qgridlayout.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QFrame \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qframe.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QGridLayout \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QHBoxLayout \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QHeaderView \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qheaderview.h \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qabstractitemview.h \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qframe.h \
 		../Qt5.8.0/5.8/gcc_64/include/QtCore/qabstractitemmodel.h \
 		../Qt5.8.0/5.8/gcc_64/include/QtCore/qitemselectionmodel.h \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -2023,6 +2043,7 @@ wight.o: wight.cpp wight.h \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qmenu.h \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QPushButton \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qpushbutton.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QSpacerItem \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QStatusBar \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qstatusbar.h \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QTabWidget \
@@ -2450,11 +2471,20 @@ load.o: load.cpp load.h \
 		../Qt5.8.0/5.8/gcc_64/include/QtGui/qinputmethod.h \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QButtonGroup \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qbuttongroup.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QFormLayout \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qformlayout.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QLayout \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qlayout.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qlayoutitem.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qboxlayout.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qgridlayout.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QFrame \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qframe.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QGridLayout \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QHeaderView \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qheaderview.h \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qabstractitemview.h \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qframe.h \
 		../Qt5.8.0/5.8/gcc_64/include/QtCore/qabstractitemmodel.h \
 		../Qt5.8.0/5.8/gcc_64/include/QtCore/qitemselectionmodel.h \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -2467,7 +2497,20 @@ load.o: load.cpp load.h \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qstyle.h \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qtabbar.h \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qtabwidget.h \
-		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qrubberband.h
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qrubberband.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QLabel \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qlabel.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QLineEdit \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qlineedit.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtGui/qtextcursor.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtGui/qtextformat.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtGui/qpen.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtGui/qtextoption.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QPushButton \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qpushbutton.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qabstractbutton.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QTabWidget \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QVBoxLayout
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o load.o load.cpp
 
 warning.o: warning.cpp warning.h \
@@ -2587,6 +2630,13 @@ warning.o: warning.cpp warning.h \
 		../Qt5.8.0/5.8/gcc_64/include/QtGui/qinputmethod.h \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QButtonGroup \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qbuttongroup.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QFormLayout \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qformlayout.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QLayout \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qlayout.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qlayoutitem.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qboxlayout.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qgridlayout.h \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QHeaderView \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qheaderview.h \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qabstractitemview.h \
@@ -2604,7 +2654,15 @@ warning.o: warning.cpp warning.h \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qstyle.h \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qtabbar.h \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qtabwidget.h \
-		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qrubberband.h
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qrubberband.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QLabel \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qlabel.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QLineEdit \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qlineedit.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtGui/qtextcursor.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtGui/qtextformat.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtGui/qpen.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtGui/qtextoption.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o warning.o warning.cpp
 
 area.o: area.cpp area.h \
@@ -3204,6 +3262,15 @@ setsystem.o: setsystem.cpp setsystem.h \
 		../Qt5.8.0/5.8/gcc_64/include/QtGui/qinputmethod.h \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QButtonGroup \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qbuttongroup.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QFormLayout \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qformlayout.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QLayout \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qlayout.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qlayoutitem.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qboxlayout.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qgridlayout.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QGridLayout \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QHBoxLayout \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QHeaderView \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qheaderview.h \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qabstractitemview.h \
@@ -3221,7 +3288,20 @@ setsystem.o: setsystem.cpp setsystem.h \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qstyle.h \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qtabbar.h \
 		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qtabwidget.h \
-		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qrubberband.h
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qrubberband.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QLabel \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qlabel.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QLineEdit \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qlineedit.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtGui/qtextcursor.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtGui/qtextformat.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtGui/qpen.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtGui/qtextoption.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QPushButton \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qpushbutton.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qabstractbutton.h \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QSpacerItem \
+		../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QVBoxLayout
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o setsystem.o setsystem.cpp
 
 load3DS.o: Loadcpp/load3DS.cpp include/Load3DS.h \

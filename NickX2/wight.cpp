@@ -4,7 +4,7 @@
 #include <QPalette>
 #include <QFont>
 #include <QPixmap>
-
+#include <QPalette>
 #include "work.h"
 #include "parameter.h"
 #include "load.h"
@@ -45,18 +45,59 @@ void wight::initFrom()  //界面初始化
     m_tower = new tower;
     m_system = new setsystem;
     m_constrution = new construction;
+/*
+    ui->widget_button->setAutoFillBackground(true);
+    QPalette palette;
+    QPixmap pixmap(":/icon/Z_Yj.png");
+    palette.setBrush(QPalette::Window,QBrush(pixmap));
+    ui->widget_button->setPalette(palette);
+    ui->widget_button->show();
+    ui->widget_top->setAutoFillBackground(true);
+
+    QPalette palette1;
+    QPixmap pixmap1(":/icon/Z_Yj.png");
+    palette1.setBrush(QPalette::Window,QBrush(pixmap1));
+    ui->widget_top->setPalette(palette1);
+    ui->widget_top->show();
+
+    ui->m_widget->setAutoFillBackground(true);
+    QPalette palette2;
+    QPixmap pixmap2(":/widget/Z_Sjdm.png");
+    palette2.setBrush(QPalette::Window,QBrush(pixmap2));
+    ui->m_widget->setPalette(palette2);
+    ui->m_widget->show();
+
+    ui->f_widget->setAutoFillBackground(true);
+    QPalette palette3;
+    QPixmap pixmap3(":/widget/Z_Ck.png");
+    palette3.setBrush(QPalette::Window,QBrush(pixmap3));
+    ui->f_widget->setPalette(palette3);
+    ui->f_widget->show();
+*/
+    ui->widget_button->setStyleSheet(tr("QWidget#widget_button{border-image: url(:/icon/Z_Yj.png);}"));
+    ui->widget_top->setStyleSheet(tr("QWidget#widget_top{border-image: url(:/icon/Z_Ym.png);}"));
+    ui->border_Widget->setStyleSheet(tr("QWidget#border_Widget{border-image: url(:/icon/Z_Hs.png);}"));
+    ui->form_Widget->setStyleSheet(tr("QWidget#form_Widget{border-image: url(:/widget/Z_Ck.png);}"));
+    ui->form1_Widget->setStyleSheet(tr("QWidget#form1_Widget{border-image: url(:/widget/Z_Ck.png);}"));
+    ui->form2_Widget->setStyleSheet(tr("QWidget#form2_Widget{border-image: url(:/widget/Z_Ck.png);}"));
 
 
+    ui->tbtitle->setStyleSheet(tr("QToolButton#tbtitle{border-image: url(:/icon/Z_An.png);}"));
+     QPalette pal;
+     pal.setColor(QPalette::Background,QColor(0X00,0Xff,0X00,0X00));
+     ui->S1_widget->setPalette(pal);
+     ui->S2_widget->setPalette(pal);
+     ui->S3_widget->setPalette(pal);
+     ui->S4_widget->setPalette(pal);
 
-    setToolButtonStyle(ui->tbwork,E_NORMAL,":/icon/Z_Gz.png");
-    setToolButtonStyle(ui->tbparameter,E_NORMAL,":/icon/Z_Cs.png");
-    setToolButtonStyle(ui->tbload,E_NORMAL,":/icon/Z_Fh.png");
-    setToolButtonStyle(ui->tbwarning,E_NORMAL,":/icon/Z_Bj.png");
-    setToolButtonStyle(ui->tbarea,E_NORMAL,":/icon/Z_Qy.png");
-    setToolButtonStyle(ui->tbtower,E_NORMAL,":/icon/Z_Tj.png");
-    setToolButtonStyle(ui->tbsystem,E_NORMAL,":/icon/Z_Xt.png");
-    setToolButtonStyle(ui->tbconstruction,E_NORMAL,":/icon/Z_Gd.png");
-
+     setToolButtonStyle(ui->tbwork,E_NORMAL,":/icon/Z_Gz.png");
+     setToolButtonStyle(ui->tbparameter,E_NORMAL,":/icon/Z_Cs.png");
+     setToolButtonStyle(ui->tbload,E_NORMAL,":/icon/Z_Fh.png");
+     setToolButtonStyle(ui->tbarea,E_NORMAL,":/icon/Z_Qy.png");
+     setToolButtonStyle(ui->tbtower,E_NORMAL,":/icon/Z_Tj.png");
+     setToolButtonStyle(ui->tbsystem,E_NORMAL,":/icon/Z_Xt.png");
+     setToolButtonStyle(ui->tbwarning,E_NORMAL,":/icon/Z_Bj.png");
+     setToolButtonStyle(ui->tbconstruction,E_NORMAL,":/icon/Z_Gd.png");
 
 }
 void wight::initTooltip() //tip显示
@@ -76,8 +117,21 @@ void wight::setcurrertime()  //设置显示当前时间
 {
 
     QDateTime ctime = QDateTime::currentDateTime();
-    QString timec = ctime.toString("yyyy-MM-dd hh:mm:ss");
+    QString timec = ctime.toString("hh:mm:ss");
+    QString time1 = ctime.toString("yyyy-MM-dd hh:mm:ss ddd");
     ui->ltime->setText(timec);
+    ui->label_29->setText(time1);
+    ui->label_30->setText(time1);
+    ui->label_31->setText(time1);
+    ui->label_32->setText(time1);
+    ui->label_33->setText(time1);
+    ui->label_34->setText(time1);
+    ui->label_35->setText(time1);
+    ui->label_36->setText(time1);
+    ui->label_37->setText(time1);
+    ui->label_38->setText(time1);
+    ui->label_39->setText(time1);
+    ui->label_40->setText(time1);
 }
 void wight ::setToolButtonStyle(QToolButton *tbn, int textsize, const QString iconName)  //按钮样式
 {

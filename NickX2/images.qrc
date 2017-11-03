@@ -1,6 +1,5 @@
 <RCC>
     <qresource prefix="/">
-        <file>icon/Z_An.png</file>
         <file>icon/Z_Bj.png</file>
         <file>icon/Z_Cs.png</file>
         <file>icon/Z_Fh.png</file>
@@ -12,7 +11,24 @@
         <file>icon/Z_Xh.png</file>
         <file>icon/Z_Xt.png</file>
         <file>icon/Z_Yj.png</file>
-        <file>icon/Z_Ym.png</file>
         <file>icon/Z_Yy.png</file>
+        <file>css/style.css</file>
+        <file>icon/Z_Hs.png</file>
+        <file>widget/Z_Mh.png</file>
+        <file>widget/Z_Sjdm.png</file>
+        <file>widget/Z_Sjym.png</file>
+        <file>widget/Z_Spdm.png</file>
+        <file>widget/Z_Xj.png</file>
+        <file>widget/Z_Fd.png</file>
+        <file>widget/Z_Fs.png</file>
+        <file>widget/Z_Gd.png</file>
+        <file>widget/Z_Hz.png</file>
+        <file>widget/Z_Lj.png</file>
+        <file>widget/Z_Zl.png</file>
+        <file>icon/Z_Ym.png</file>
+        <file>widget/Z_Tb.png</file>
+        <file>icon/Z_An.png</file>
+        <file>widget/Z_Ck.png</file>
+        <file>widget/Z_Ck2.png</file>
     </qresource>
 </RCC>

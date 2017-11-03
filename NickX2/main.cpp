@@ -5,11 +5,11 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-   /* QFile file(":/CSS/style.css");
+    QFile file(":/css/style.css");
     file.open(QFile::ReadOnly);
     QString css = QLatin1String(file.readAll());
     qApp->setStyleSheet(css);
-   */
+
     wight w;
     w.show();
 
