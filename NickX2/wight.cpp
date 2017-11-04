@@ -45,47 +45,17 @@ void wight::initFrom()  //界面初始化
     m_tower = new tower;
     m_system = new setsystem;
     m_constrution = new construction;
-/*
-    ui->widget_button->setAutoFillBackground(true);
-    QPalette palette;
-    QPixmap pixmap(":/icon/Z_Yj.png");
-    palette.setBrush(QPalette::Window,QBrush(pixmap));
-    ui->widget_button->setPalette(palette);
-    ui->widget_button->show();
-    ui->widget_top->setAutoFillBackground(true);
 
-    QPalette palette1;
-    QPixmap pixmap1(":/icon/Z_Yj.png");
-    palette1.setBrush(QPalette::Window,QBrush(pixmap1));
-    ui->widget_top->setPalette(palette1);
-    ui->widget_top->show();
-
-    ui->m_widget->setAutoFillBackground(true);
-    QPalette palette2;
-    QPixmap pixmap2(":/widget/Z_Sjdm.png");
-    palette2.setBrush(QPalette::Window,QBrush(pixmap2));
-    ui->m_widget->setPalette(palette2);
-    ui->m_widget->show();
-
-    ui->f_widget->setAutoFillBackground(true);
-    QPalette palette3;
-    QPixmap pixmap3(":/widget/Z_Ck.png");
-    palette3.setBrush(QPalette::Window,QBrush(pixmap3));
-    ui->f_widget->setPalette(palette3);
-    ui->f_widget->show();
-*/
     ui->widget_button->setStyleSheet(tr("QWidget#widget_button{border-image: url(:/icon/Z_Yj.png);}"));
     ui->widget_top->setStyleSheet(tr("QWidget#widget_top{border-image: url(:/icon/Z_Ym.png);}"));
     ui->border_Widget->setStyleSheet(tr("QWidget#border_Widget{border-image: url(:/icon/Z_Hs.png);}"));
-    ui->form_Widget->setStyleSheet(tr("QWidget#form_Widget{border-image: url(:/widget/Z_Ck.png);}"));
-    ui->form1_Widget->setStyleSheet(tr("QWidget#form1_Widget{border-image: url(:/widget/Z_Ck.png);}"));
-    ui->form2_Widget->setStyleSheet(tr("QWidget#form2_Widget{border-image: url(:/widget/Z_Ck.png);}"));
+    ui->form_widget->setStyleSheet(tr("QWidget#form_widget{border-image: url(:/widget/Z_Ck.png);}"));
+    ui->form1_widget->setStyleSheet(tr("QWidget#form1_widget{border-image: url(:/widget/Z_Ck.png);}"));
+    ui->form2_widget->setStyleSheet(tr("QWidget#form2_widget{border-image: url(:/widget/Z_Ck.png);}"));
 
-    ui->lineEdit_14->setStyleSheet(tr("QLineEdit#lineEdit_14{background-color:rgba(255,255,255,0%)}"));
-    ui->lineEdit_15->setStyleSheet(tr("QLineEdit#lineEdit_15{background-color:rgba(255,255,255,0%)}"));
-    ui->lineEdit_16->setStyleSheet(tr("QLineEdit#lineEdit_16{background-color:rgba(255,255,255,0%)}"));
-    ui->lineEdit_17->setStyleSheet(tr("QLineEdit#lineEdit_17{background-color:rgba(255,255,255,0%)}"));
-    ui->lineEdit_18->setStyleSheet(tr("QLineEdit#lineEdit_18{background-color:rgba(255,255,255,0%)}"));
+    ui->lineEdit->setStyleSheet(tr("QLineEdit#lineEdit{background-color:rgba(255,255,255,0%)}"));
+    ui->lineEdit_2->setStyleSheet(tr("QLineEdit#lineEdit_2{background-color:rgba(255,255,255,0%)}"));
+    ui->lineEdit_3->setStyleSheet(tr("QLineEdit#lineEdit_3{background-color:rgba(255,255,255,0%)}"));
     ui->lineEdit_19->setStyleSheet(tr("QLineEdit#lineEdit_19{background-color:rgba(255,255,255,0%)}"));
     ui->lineEdit_20->setStyleSheet(tr("QLineEdit#lineEdit_20{background-color:rgba(255,255,255,0%)}"));
     ui->lineEdit_21->setStyleSheet(tr("QLineEdit#lineEdit_21{background-color:rgba(255,255,255,0%)}"));
@@ -96,25 +66,21 @@ void wight::initFrom()  //界面初始化
     ui->lineEdit_26->setStyleSheet(tr("QLineEdit#lineEdit_26{background-color:rgba(255,255,255,0%)}"));
     ui->lineEdit_27->setStyleSheet(tr("QLineEdit#lineEdit_27{background-color:rgba(255,255,255,0%)}"));
     ui->lineEdit_28->setStyleSheet(tr("QLineEdit#lineEdit_28{background-color:rgba(255,255,255,0%)}"));
-
-
+    ui->lineEdit_29->setStyleSheet(tr("QLineEdit#lineEdit_29{background-color:rgba(255,255,255,0%)}"));
+    ui->lineEdit_30->setStyleSheet(tr("QLineEdit#lineEdit_30{background-color:rgba(255,255,255,0%)}"));
+    ui->lineEdit_31->setStyleSheet(tr("QLineEdit#lineEdit_31{background-color:rgba(255,255,255,0%)}"));
+    ui->lineEdit_32->setStyleSheet(tr("QLineEdit#lineEdit_32{background-color:rgba(255,255,255,0%)}"));
+    ui->lineEdit_33->setStyleSheet(tr("QLineEdit#lineEdit_33{background-color:rgba(255,255,255,0%)}"));
 
     ui->tbtitle->setStyleSheet(tr("QToolButton#tbtitle{border-image: url(:/icon/Z_An.png);}"));
-     QPalette pal;
-     pal.setColor(QPalette::Background,QColor(0X00,0Xff,0X00,0X00));
-     ui->S1_widget->setPalette(pal);
-     ui->S2_widget->setPalette(pal);
-     ui->S3_widget->setPalette(pal);
-     ui->S4_widget->setPalette(pal);
-
-     setToolButtonStyle(ui->tbwork,E_NORMAL,":/icon/Z_Gz.png");
-     setToolButtonStyle(ui->tbparameter,E_NORMAL,":/icon/Z_Cs.png");
-     setToolButtonStyle(ui->tbload,E_NORMAL,":/icon/Z_Fh.png");
-     setToolButtonStyle(ui->tbarea,E_NORMAL,":/icon/Z_Qy.png");
-     setToolButtonStyle(ui->tbtower,E_NORMAL,":/icon/Z_Tj.png");
-     setToolButtonStyle(ui->tbsystem,E_NORMAL,":/icon/Z_Xt.png");
-     setToolButtonStyle(ui->tbwarning,E_NORMAL,":/icon/Z_Bj.png");
-     setToolButtonStyle(ui->tbconstruction,E_NORMAL,":/icon/Z_Gd.png");
+    setToolButtonStyle(ui->tbwork,E_NORMAL,":/icon/Z_Gz.png");
+    setToolButtonStyle(ui->tbparameter,E_NORMAL,":/icon/Z_Cs.png");
+    setToolButtonStyle(ui->tbload,E_NORMAL,":/icon/Z_Fh.png");
+    setToolButtonStyle(ui->tbarea,E_NORMAL,":/icon/Z_Qy.png");
+    setToolButtonStyle(ui->tbtower,E_NORMAL,":/icon/Z_Tj.png");
+    setToolButtonStyle(ui->tbsystem,E_NORMAL,":/icon/Z_Xt.png");
+    setToolButtonStyle(ui->tbwarning,E_NORMAL,":/icon/Z_Bj.png");
+    setToolButtonStyle(ui->tbconstruction,E_NORMAL,":/icon/Z_Gd.png");
 
 }
 void wight::initTooltip() //tip显示
@@ -164,10 +130,7 @@ void wight ::setToolButtonStyle(QToolButton *tbn, int textsize, const QString ic
     tbn->setAutoRaise(true);
     tbn->setFixedSize(50,50);
     tbn->setIcon(QPixmap(QString("%1").arg(iconName)));
-    tbn->setIconSize(QPixmap(QString("%1").arg(iconName)).size());
-   // tbn->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
-
-
+    tbn->setIconSize(QPixmap(QString("%1").arg(iconName)).size());  
 
 }
 wight::~wight()

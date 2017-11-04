@@ -131,7 +131,7 @@
      <x>460</x>
      <y>260</y>
      <width>160</width>
-     <height>291</height>
+     <height>321</height>
     </rect>
    </property>
    <layout class="QFormLayout" name="formLayout_3">
@@ -235,14 +235,28 @@
       </property>
      </widget>
     </item>
+    <item row="10" column="0">
+     <widget class="QLabel" name="label_11">
+      <property name="text">
+       <string>    高度：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="0" colspan="2">
+     <widget class="QLabel" name="label_12">
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/widget/Z_Gd.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="1">
+     <widget class="QLineEdit" name="lineEdit"/>
+    </item>
    </layout>
   </widget>
-  <zorder>label_25</zorder>
-  <zorder>lineEdit_15</zorder>
-  <zorder>formWidget</zorder>
-  <zorder>horizontalSpacer</zorder>
-  <zorder>horizontalSpacer_2</zorder>
-  <zorder>formLayoutWidget_2</zorder>
  </widget>
  <resources/>
  <connections/>

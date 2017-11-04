@@ -851,45 +851,7 @@ color: rgb(255, 255, 255);
         </item>
        </layout>
       </widget>
-      <widget class="QWidget" name="layoutWidget">
-       <property name="geometry">
-        <rect>
-         <x>90</x>
-         <y>740</y>
-         <width>371</width>
-         <height>22</height>
-        </rect>
-       </property>
-       <layout class="QHBoxLayout" name="horizontalLayout_21">
-        <item>
-         <spacer name="horizontalSpacer_26">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>40</width>
-            <height>20</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item>
-         <spacer name="horizontalSpacer_27">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>40</width>
-            <height>20</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-       </layout>
-      </widget>
-      <widget class="QWidget" name="form_Widget" native="true">
+      <widget class="QWidget" name="form_widget" native="true">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -900,17 +862,17 @@ color: rgb(255, 255, 255);
        </property>
        <layout class="QFormLayout" name="formLayout_3">
         <item row="0" column="0">
-         <widget class="QLabel" name="label_24">
+         <widget class="QLabel" name="label_44">
           <property name="text">
-           <string>  幅度:</string>
+           <string>    幅度:</string>
           </property>
          </widget>
         </item>
         <item row="0" column="1">
-         <widget class="QLineEdit" name="lineEdit_14"/>
+         <widget class="QLineEdit" name="lineEdit_29"/>
         </item>
         <item row="1" column="0" colspan="2">
-         <widget class="QLabel" name="label_23">
+         <widget class="QLabel" name="label_11">
           <property name="styleSheet">
            <string notr="true">border-image: url(:/widget/Z_Fd.png);</string>
           </property>
@@ -920,17 +882,17 @@ color: rgb(255, 255, 255);
          </widget>
         </item>
         <item row="2" column="0">
-         <widget class="QLabel" name="label_25">
+         <widget class="QLabel" name="label_45">
           <property name="text">
-           <string>  重量:</string>
+           <string>    重量:</string>
           </property>
          </widget>
         </item>
         <item row="2" column="1">
-         <widget class="QLineEdit" name="lineEdit_15"/>
+         <widget class="QLineEdit" name="lineEdit_30"/>
         </item>
         <item row="3" column="0" colspan="2">
-         <widget class="QLabel" name="label_26">
+         <widget class="QLabel" name="label_14">
           <property name="styleSheet">
            <string notr="true">border-image: url(:/widget/Z_Zl.png);</string>
           </property>
@@ -940,17 +902,17 @@ color: rgb(255, 255, 255);
          </widget>
         </item>
         <item row="4" column="0">
-         <widget class="QLabel" name="label_27">
+         <widget class="QLabel" name="label_46">
           <property name="text">
-           <string>  风速:</string>
+           <string>    风速:</string>
           </property>
          </widget>
         </item>
         <item row="4" column="1">
-         <widget class="QLineEdit" name="lineEdit_16"/>
+         <widget class="QLineEdit" name="lineEdit_31"/>
         </item>
         <item row="5" column="0" colspan="2">
-         <widget class="QLabel" name="label_28">
+         <widget class="QLabel" name="label_23">
           <property name="styleSheet">
            <string notr="true">border-image: url(:/widget/Z_Fs.png);</string>
           </property>
@@ -960,17 +922,17 @@ color: rgb(255, 255, 255);
          </widget>
         </item>
         <item row="6" column="0">
-         <widget class="QLabel" name="label_44">
+         <widget class="QLabel" name="label_47">
           <property name="text">
-           <string>  回转:</string>
+           <string>    回转:</string>
           </property>
          </widget>
         </item>
         <item row="6" column="1">
-         <widget class="QLineEdit" name="lineEdit_17"/>
+         <widget class="QLineEdit" name="lineEdit_32"/>
         </item>
         <item row="7" column="0" colspan="2">
-         <widget class="QLabel" name="label_45">
+         <widget class="QLabel" name="label_24">
           <property name="styleSheet">
            <string notr="true">border-image: url(:/widget/Z_Hz.png);</string>
           </property>
@@ -980,17 +942,17 @@ color: rgb(255, 255, 255);
          </widget>
         </item>
         <item row="8" column="0">
-         <widget class="QLabel" name="label_46">
+         <widget class="QLabel" name="label_58">
           <property name="text">
-           <string>  力矩:</string>
+           <string>    力矩:</string>
           </property>
          </widget>
         </item>
         <item row="8" column="1">
-         <widget class="QLineEdit" name="lineEdit_18"/>
+         <widget class="QLineEdit" name="lineEdit_33"/>
         </item>
         <item row="9" column="0" colspan="2">
-         <widget class="QLabel" name="label_47">
+         <widget class="QLabel" name="label_25">
           <property name="styleSheet">
            <string notr="true">border-image: url(:/widget/Z_Lj.png);</string>
           </property>
@@ -998,6 +960,26 @@ color: rgb(255, 255, 255);
            <string/>
           </property>
          </widget>
+        </item>
+        <item row="10" column="0">
+         <widget class="QLabel" name="label_26">
+          <property name="text">
+           <string>    高度：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="0" colspan="2">
+         <widget class="QLabel" name="label_27">
+          <property name="styleSheet">
+           <string notr="true">border-image: url(:/widget/Z_Gd.png);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="1">
+         <widget class="QLineEdit" name="lineEdit"/>
         </item>
        </layout>
       </widget>
@@ -1370,23 +1352,20 @@ border-image: url(:/widget/Z_Tb.png);</string>
         </item>
        </layout>
       </widget>
-      <widget class="QWidget" name="form1_Widget" native="true">
+      <widget class="QWidget" name="form1_widget" native="true">
        <property name="geometry">
         <rect>
-         <x>20</x>
+         <x>19</x>
          <y>300</y>
          <width>141</width>
          <height>461</height>
         </rect>
        </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
        <layout class="QFormLayout" name="formLayout_4">
         <item row="0" column="0">
          <widget class="QLabel" name="label_48">
           <property name="text">
-           <string>  幅度:</string>
+           <string>    幅度:</string>
           </property>
          </widget>
         </item>
@@ -1394,7 +1373,7 @@ border-image: url(:/widget/Z_Tb.png);</string>
          <widget class="QLineEdit" name="lineEdit_19"/>
         </item>
         <item row="1" column="0" colspan="2">
-         <widget class="QLabel" name="label_2">
+         <widget class="QLabel" name="label_28">
           <property name="styleSheet">
            <string notr="true">border-image: url(:/widget/Z_Fd.png);</string>
           </property>
@@ -1406,7 +1385,7 @@ border-image: url(:/widget/Z_Tb.png);</string>
         <item row="2" column="0">
          <widget class="QLabel" name="label_49">
           <property name="text">
-           <string>  重量:</string>
+           <string>    重量:</string>
           </property>
          </widget>
         </item>
@@ -1414,7 +1393,7 @@ border-image: url(:/widget/Z_Tb.png);</string>
          <widget class="QLineEdit" name="lineEdit_20"/>
         </item>
         <item row="3" column="0" colspan="2">
-         <widget class="QLabel" name="label">
+         <widget class="QLabel" name="label_50">
           <property name="styleSheet">
            <string notr="true">border-image: url(:/widget/Z_Zl.png);</string>
           </property>
@@ -1424,9 +1403,9 @@ border-image: url(:/widget/Z_Tb.png);</string>
          </widget>
         </item>
         <item row="4" column="0">
-         <widget class="QLabel" name="label_50">
+         <widget class="QLabel" name="label_51">
           <property name="text">
-           <string>  风速:</string>
+           <string>    风速:</string>
           </property>
          </widget>
         </item>
@@ -1434,7 +1413,7 @@ border-image: url(:/widget/Z_Tb.png);</string>
          <widget class="QLineEdit" name="lineEdit_21"/>
         </item>
         <item row="5" column="0" colspan="2">
-         <widget class="QLabel" name="label_3">
+         <widget class="QLabel" name="label_52">
           <property name="styleSheet">
            <string notr="true">border-image: url(:/widget/Z_Fs.png);</string>
           </property>
@@ -1444,9 +1423,9 @@ border-image: url(:/widget/Z_Tb.png);</string>
          </widget>
         </item>
         <item row="6" column="0">
-         <widget class="QLabel" name="label_51">
+         <widget class="QLabel" name="label_59">
           <property name="text">
-           <string>  回转:</string>
+           <string>    回转:</string>
           </property>
          </widget>
         </item>
@@ -1454,7 +1433,7 @@ border-image: url(:/widget/Z_Tb.png);</string>
          <widget class="QLineEdit" name="lineEdit_22"/>
         </item>
         <item row="7" column="0" colspan="2">
-         <widget class="QLabel" name="label_4">
+         <widget class="QLabel" name="label_60">
           <property name="styleSheet">
            <string notr="true">border-image: url(:/widget/Z_Hz.png);</string>
           </property>
@@ -1464,9 +1443,9 @@ border-image: url(:/widget/Z_Tb.png);</string>
          </widget>
         </item>
         <item row="8" column="0">
-         <widget class="QLabel" name="label_52">
+         <widget class="QLabel" name="label_61">
           <property name="text">
-           <string>  力矩:</string>
+           <string>    力矩:</string>
           </property>
          </widget>
         </item>
@@ -1474,7 +1453,7 @@ border-image: url(:/widget/Z_Tb.png);</string>
          <widget class="QLineEdit" name="lineEdit_23"/>
         </item>
         <item row="9" column="0" colspan="2">
-         <widget class="QLabel" name="label_5">
+         <widget class="QLabel" name="label_62">
           <property name="styleSheet">
            <string notr="true">border-image: url(:/widget/Z_Lj.png);</string>
           </property>
@@ -1482,6 +1461,26 @@ border-image: url(:/widget/Z_Tb.png);</string>
            <string/>
           </property>
          </widget>
+        </item>
+        <item row="10" column="0">
+         <widget class="QLabel" name="label_63">
+          <property name="text">
+           <string>    高度：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="0" colspan="2">
+         <widget class="QLabel" name="label_64">
+          <property name="styleSheet">
+           <string notr="true">border-image: url(:/widget/Z_Gd.png);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="1">
+         <widget class="QLineEdit" name="lineEdit_2"/>
         </item>
        </layout>
       </widget>
@@ -1855,7 +1854,7 @@ border-image: url(:/widget/Z_Tb.png);
         </item>
        </layout>
       </widget>
-      <widget class="QWidget" name="form2_Widget" native="true">
+      <widget class="QWidget" name="form2_widget" native="true">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -1868,7 +1867,7 @@ border-image: url(:/widget/Z_Tb.png);
         <item row="0" column="0">
          <widget class="QLabel" name="label_53">
           <property name="text">
-           <string>  幅度:</string>
+           <string>    幅度:</string>
           </property>
          </widget>
         </item>
@@ -1876,7 +1875,7 @@ border-image: url(:/widget/Z_Tb.png);
          <widget class="QLineEdit" name="lineEdit_24"/>
         </item>
         <item row="1" column="0" colspan="2">
-         <widget class="QLabel" name="label_6">
+         <widget class="QLabel" name="label_54">
           <property name="styleSheet">
            <string notr="true">border-image: url(:/widget/Z_Fd.png);</string>
           </property>
@@ -1886,9 +1885,9 @@ border-image: url(:/widget/Z_Tb.png);
          </widget>
         </item>
         <item row="2" column="0">
-         <widget class="QLabel" name="label_54">
+         <widget class="QLabel" name="label_55">
           <property name="text">
-           <string>  重量:</string>
+           <string>    重量:</string>
           </property>
          </widget>
         </item>
@@ -1896,7 +1895,7 @@ border-image: url(:/widget/Z_Tb.png);
          <widget class="QLineEdit" name="lineEdit_25"/>
         </item>
         <item row="3" column="0" colspan="2">
-         <widget class="QLabel" name="label_7">
+         <widget class="QLabel" name="label_56">
           <property name="styleSheet">
            <string notr="true">border-image: url(:/widget/Z_Zl.png);</string>
           </property>
@@ -1906,9 +1905,9 @@ border-image: url(:/widget/Z_Tb.png);
          </widget>
         </item>
         <item row="4" column="0">
-         <widget class="QLabel" name="label_55">
+         <widget class="QLabel" name="label_57">
           <property name="text">
-           <string>  风速:</string>
+           <string>    风速:</string>
           </property>
          </widget>
         </item>
@@ -1916,7 +1915,7 @@ border-image: url(:/widget/Z_Tb.png);
          <widget class="QLineEdit" name="lineEdit_26"/>
         </item>
         <item row="5" column="0" colspan="2">
-         <widget class="QLabel" name="label_8">
+         <widget class="QLabel" name="label_65">
           <property name="styleSheet">
            <string notr="true">border-image: url(:/widget/Z_Fs.png);</string>
           </property>
@@ -1926,9 +1925,9 @@ border-image: url(:/widget/Z_Tb.png);
          </widget>
         </item>
         <item row="6" column="0">
-         <widget class="QLabel" name="label_56">
+         <widget class="QLabel" name="label_66">
           <property name="text">
-           <string>  回转:</string>
+           <string>    回转:</string>
           </property>
          </widget>
         </item>
@@ -1936,7 +1935,7 @@ border-image: url(:/widget/Z_Tb.png);
          <widget class="QLineEdit" name="lineEdit_27"/>
         </item>
         <item row="7" column="0" colspan="2">
-         <widget class="QLabel" name="label_9">
+         <widget class="QLabel" name="label_67">
           <property name="styleSheet">
            <string notr="true">border-image: url(:/widget/Z_Hz.png);</string>
           </property>
@@ -1946,9 +1945,9 @@ border-image: url(:/widget/Z_Tb.png);
          </widget>
         </item>
         <item row="8" column="0">
-         <widget class="QLabel" name="label_57">
+         <widget class="QLabel" name="label_68">
           <property name="text">
-           <string>  力矩:</string>
+           <string>    力矩:</string>
           </property>
          </widget>
         </item>
@@ -1956,7 +1955,7 @@ border-image: url(:/widget/Z_Tb.png);
          <widget class="QLineEdit" name="lineEdit_28"/>
         </item>
         <item row="9" column="0" colspan="2">
-         <widget class="QLabel" name="label_10">
+         <widget class="QLabel" name="label_69">
           <property name="styleSheet">
            <string notr="true">border-image: url(:/widget/Z_Lj.png);</string>
           </property>
@@ -1964,6 +1963,26 @@ border-image: url(:/widget/Z_Tb.png);
            <string/>
           </property>
          </widget>
+        </item>
+        <item row="10" column="0">
+         <widget class="QLabel" name="label_70">
+          <property name="text">
+           <string>    高度：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="0" colspan="2">
+         <widget class="QLabel" name="label_71">
+          <property name="styleSheet">
+           <string notr="true">border-image: url(:/widget/Z_Gd.png);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="1">
+         <widget class="QLineEdit" name="lineEdit_3"/>
         </item>
        </layout>
       </widget>

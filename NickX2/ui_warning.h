@@ -58,6 +58,9 @@ public:
     QLabel *label_33;
     QLineEdit *lineEdit_23;
     QLabel *label_10;
+    QLabel *label_11;
+    QLabel *label_12;
+    QLineEdit *lineEdit;
 
     void setupUi(QWidget *warning)
     {
@@ -151,7 +154,7 @@ public:
 
         formLayoutWidget_2 = new QWidget(warning);
         formLayoutWidget_2->setObjectName(QStringLiteral("formLayoutWidget_2"));
-        formLayoutWidget_2->setGeometry(QRect(460, 260, 160, 291));
+        formLayoutWidget_2->setGeometry(QRect(460, 260, 160, 321));
         formLayout_3 = new QFormLayout(formLayoutWidget_2);
         formLayout_3->setObjectName(QStringLiteral("formLayout_3"));
         formLayout_3->setContentsMargins(0, 0, 0, 0);
@@ -235,10 +238,22 @@ public:
 
         formLayout_3->setWidget(9, QFormLayout::SpanningRole, label_10);
 
-        label_25->raise();
-        lineEdit_15->raise();
-        formWidget->raise();
-        formLayoutWidget_2->raise();
+        label_11 = new QLabel(formLayoutWidget_2);
+        label_11->setObjectName(QStringLiteral("label_11"));
+
+        formLayout_3->setWidget(10, QFormLayout::LabelRole, label_11);
+
+        label_12 = new QLabel(formLayoutWidget_2);
+        label_12->setObjectName(QStringLiteral("label_12"));
+        label_12->setStyleSheet(QStringLiteral("border-image: url(:/widget/Z_Gd.png);"));
+
+        formLayout_3->setWidget(11, QFormLayout::SpanningRole, label_12);
+
+        lineEdit = new QLineEdit(formLayoutWidget_2);
+        lineEdit->setObjectName(QStringLiteral("lineEdit"));
+
+        formLayout_3->setWidget(10, QFormLayout::FieldRole, lineEdit);
+
 
         retranslateUi(warning);
 
@@ -268,6 +283,8 @@ public:
         label_9->setText(QString());
         label_33->setText(QApplication::translate("warning", "    \345\212\233\347\237\251:", Q_NULLPTR));
         label_10->setText(QString());
+        label_11->setText(QApplication::translate("warning", "    \351\253\230\345\272\246\357\274\232", Q_NULLPTR));
+        label_12->setText(QString());
     } // retranslateUi
 
 };

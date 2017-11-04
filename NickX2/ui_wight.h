@@ -110,27 +110,26 @@ public:
     QHBoxLayout *horizontalLayout_20;
     QSpacerItem *horizontalSpacer_24;
     QSpacerItem *horizontalSpacer_25;
-    QWidget *layoutWidget;
-    QHBoxLayout *horizontalLayout_21;
-    QSpacerItem *horizontalSpacer_26;
-    QSpacerItem *horizontalSpacer_27;
-    QWidget *form_Widget;
+    QWidget *form_widget;
     QFormLayout *formLayout_3;
-    QLabel *label_24;
-    QLineEdit *lineEdit_14;
+    QLabel *label_44;
+    QLineEdit *lineEdit_29;
+    QLabel *label_11;
+    QLabel *label_45;
+    QLineEdit *lineEdit_30;
+    QLabel *label_14;
+    QLabel *label_46;
+    QLineEdit *lineEdit_31;
     QLabel *label_23;
+    QLabel *label_47;
+    QLineEdit *lineEdit_32;
+    QLabel *label_24;
+    QLabel *label_58;
+    QLineEdit *lineEdit_33;
     QLabel *label_25;
-    QLineEdit *lineEdit_15;
     QLabel *label_26;
     QLabel *label_27;
-    QLineEdit *lineEdit_16;
-    QLabel *label_28;
-    QLabel *label_44;
-    QLineEdit *lineEdit_17;
-    QLabel *label_45;
-    QLabel *label_46;
-    QLineEdit *lineEdit_18;
-    QLabel *label_47;
+    QLineEdit *lineEdit;
     QWidget *tab_2;
     QWidget *verticalLayoutWidget_3;
     QVBoxLayout *verticalLayout_12;
@@ -170,23 +169,26 @@ public:
     QHBoxLayout *horizontalLayout_19;
     QSpacerItem *horizontalSpacer_22;
     QSpacerItem *horizontalSpacer_23;
-    QWidget *form1_Widget;
+    QWidget *form1_widget;
     QFormLayout *formLayout_4;
     QLabel *label_48;
     QLineEdit *lineEdit_19;
-    QLabel *label_2;
+    QLabel *label_28;
     QLabel *label_49;
     QLineEdit *lineEdit_20;
-    QLabel *label;
     QLabel *label_50;
-    QLineEdit *lineEdit_21;
-    QLabel *label_3;
     QLabel *label_51;
-    QLineEdit *lineEdit_22;
-    QLabel *label_4;
+    QLineEdit *lineEdit_21;
     QLabel *label_52;
+    QLabel *label_59;
+    QLineEdit *lineEdit_22;
+    QLabel *label_60;
+    QLabel *label_61;
     QLineEdit *lineEdit_23;
-    QLabel *label_5;
+    QLabel *label_62;
+    QLabel *label_63;
+    QLabel *label_64;
+    QLineEdit *lineEdit_2;
     QWidget *tab_3;
     QWidget *verticalLayoutWidget_4;
     QVBoxLayout *verticalLayout_13;
@@ -226,23 +228,26 @@ public:
     QHBoxLayout *horizontalLayout_18;
     QSpacerItem *horizontalSpacer_20;
     QSpacerItem *horizontalSpacer_21;
-    QWidget *form2_Widget;
+    QWidget *form2_widget;
     QFormLayout *formLayout_5;
     QLabel *label_53;
     QLineEdit *lineEdit_24;
-    QLabel *label_6;
     QLabel *label_54;
-    QLineEdit *lineEdit_25;
-    QLabel *label_7;
     QLabel *label_55;
-    QLineEdit *lineEdit_26;
-    QLabel *label_8;
+    QLineEdit *lineEdit_25;
     QLabel *label_56;
-    QLineEdit *lineEdit_27;
-    QLabel *label_9;
     QLabel *label_57;
+    QLineEdit *lineEdit_26;
+    QLabel *label_65;
+    QLabel *label_66;
+    QLineEdit *lineEdit_27;
+    QLabel *label_67;
+    QLabel *label_68;
     QLineEdit *lineEdit_28;
-    QLabel *label_10;
+    QLabel *label_69;
+    QLabel *label_70;
+    QLabel *label_71;
+    QLineEdit *lineEdit_3;
     QStatusBar *statusBar;
     QMenuBar *menuBar;
 
@@ -704,108 +709,108 @@ public:
 
         horizontalLayout_20->addItem(horizontalSpacer_25);
 
-        layoutWidget = new QWidget(tab_widget);
-        layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
-        layoutWidget->setGeometry(QRect(90, 740, 371, 22));
-        horizontalLayout_21 = new QHBoxLayout(layoutWidget);
-        horizontalLayout_21->setSpacing(6);
-        horizontalLayout_21->setContentsMargins(11, 11, 11, 11);
-        horizontalLayout_21->setObjectName(QStringLiteral("horizontalLayout_21"));
-        horizontalLayout_21->setContentsMargins(0, 0, 0, 0);
-        horizontalSpacer_26 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        horizontalLayout_21->addItem(horizontalSpacer_26);
-
-        horizontalSpacer_27 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        horizontalLayout_21->addItem(horizontalSpacer_27);
-
-        form_Widget = new QWidget(tab_widget);
-        form_Widget->setObjectName(QStringLiteral("form_Widget"));
-        form_Widget->setGeometry(QRect(20, 50, 131, 261));
-        formLayout_3 = new QFormLayout(form_Widget);
+        form_widget = new QWidget(tab_widget);
+        form_widget->setObjectName(QStringLiteral("form_widget"));
+        form_widget->setGeometry(QRect(20, 50, 131, 261));
+        formLayout_3 = new QFormLayout(form_widget);
         formLayout_3->setSpacing(6);
         formLayout_3->setContentsMargins(11, 11, 11, 11);
         formLayout_3->setObjectName(QStringLiteral("formLayout_3"));
-        label_24 = new QLabel(form_Widget);
-        label_24->setObjectName(QStringLiteral("label_24"));
-
-        formLayout_3->setWidget(0, QFormLayout::LabelRole, label_24);
-
-        lineEdit_14 = new QLineEdit(form_Widget);
-        lineEdit_14->setObjectName(QStringLiteral("lineEdit_14"));
-
-        formLayout_3->setWidget(0, QFormLayout::FieldRole, lineEdit_14);
-
-        label_23 = new QLabel(form_Widget);
-        label_23->setObjectName(QStringLiteral("label_23"));
-        label_23->setStyleSheet(QStringLiteral("border-image: url(:/widget/Z_Fd.png);"));
-
-        formLayout_3->setWidget(1, QFormLayout::SpanningRole, label_23);
-
-        label_25 = new QLabel(form_Widget);
-        label_25->setObjectName(QStringLiteral("label_25"));
-
-        formLayout_3->setWidget(2, QFormLayout::LabelRole, label_25);
-
-        lineEdit_15 = new QLineEdit(form_Widget);
-        lineEdit_15->setObjectName(QStringLiteral("lineEdit_15"));
-
-        formLayout_3->setWidget(2, QFormLayout::FieldRole, lineEdit_15);
-
-        label_26 = new QLabel(form_Widget);
-        label_26->setObjectName(QStringLiteral("label_26"));
-        label_26->setStyleSheet(QStringLiteral("border-image: url(:/widget/Z_Zl.png);"));
-
-        formLayout_3->setWidget(3, QFormLayout::SpanningRole, label_26);
-
-        label_27 = new QLabel(form_Widget);
-        label_27->setObjectName(QStringLiteral("label_27"));
-
-        formLayout_3->setWidget(4, QFormLayout::LabelRole, label_27);
-
-        lineEdit_16 = new QLineEdit(form_Widget);
-        lineEdit_16->setObjectName(QStringLiteral("lineEdit_16"));
-
-        formLayout_3->setWidget(4, QFormLayout::FieldRole, lineEdit_16);
-
-        label_28 = new QLabel(form_Widget);
-        label_28->setObjectName(QStringLiteral("label_28"));
-        label_28->setStyleSheet(QStringLiteral("border-image: url(:/widget/Z_Fs.png);"));
-
-        formLayout_3->setWidget(5, QFormLayout::SpanningRole, label_28);
-
-        label_44 = new QLabel(form_Widget);
+        label_44 = new QLabel(form_widget);
         label_44->setObjectName(QStringLiteral("label_44"));
 
-        formLayout_3->setWidget(6, QFormLayout::LabelRole, label_44);
+        formLayout_3->setWidget(0, QFormLayout::LabelRole, label_44);
 
-        lineEdit_17 = new QLineEdit(form_Widget);
-        lineEdit_17->setObjectName(QStringLiteral("lineEdit_17"));
+        lineEdit_29 = new QLineEdit(form_widget);
+        lineEdit_29->setObjectName(QStringLiteral("lineEdit_29"));
 
-        formLayout_3->setWidget(6, QFormLayout::FieldRole, lineEdit_17);
+        formLayout_3->setWidget(0, QFormLayout::FieldRole, lineEdit_29);
 
-        label_45 = new QLabel(form_Widget);
+        label_11 = new QLabel(form_widget);
+        label_11->setObjectName(QStringLiteral("label_11"));
+        label_11->setStyleSheet(QStringLiteral("border-image: url(:/widget/Z_Fd.png);"));
+
+        formLayout_3->setWidget(1, QFormLayout::SpanningRole, label_11);
+
+        label_45 = new QLabel(form_widget);
         label_45->setObjectName(QStringLiteral("label_45"));
-        label_45->setStyleSheet(QStringLiteral("border-image: url(:/widget/Z_Hz.png);"));
 
-        formLayout_3->setWidget(7, QFormLayout::SpanningRole, label_45);
+        formLayout_3->setWidget(2, QFormLayout::LabelRole, label_45);
 
-        label_46 = new QLabel(form_Widget);
+        lineEdit_30 = new QLineEdit(form_widget);
+        lineEdit_30->setObjectName(QStringLiteral("lineEdit_30"));
+
+        formLayout_3->setWidget(2, QFormLayout::FieldRole, lineEdit_30);
+
+        label_14 = new QLabel(form_widget);
+        label_14->setObjectName(QStringLiteral("label_14"));
+        label_14->setStyleSheet(QStringLiteral("border-image: url(:/widget/Z_Zl.png);"));
+
+        formLayout_3->setWidget(3, QFormLayout::SpanningRole, label_14);
+
+        label_46 = new QLabel(form_widget);
         label_46->setObjectName(QStringLiteral("label_46"));
 
-        formLayout_3->setWidget(8, QFormLayout::LabelRole, label_46);
+        formLayout_3->setWidget(4, QFormLayout::LabelRole, label_46);
 
-        lineEdit_18 = new QLineEdit(form_Widget);
-        lineEdit_18->setObjectName(QStringLiteral("lineEdit_18"));
+        lineEdit_31 = new QLineEdit(form_widget);
+        lineEdit_31->setObjectName(QStringLiteral("lineEdit_31"));
 
-        formLayout_3->setWidget(8, QFormLayout::FieldRole, lineEdit_18);
+        formLayout_3->setWidget(4, QFormLayout::FieldRole, lineEdit_31);
 
-        label_47 = new QLabel(form_Widget);
+        label_23 = new QLabel(form_widget);
+        label_23->setObjectName(QStringLiteral("label_23"));
+        label_23->setStyleSheet(QStringLiteral("border-image: url(:/widget/Z_Fs.png);"));
+
+        formLayout_3->setWidget(5, QFormLayout::SpanningRole, label_23);
+
+        label_47 = new QLabel(form_widget);
         label_47->setObjectName(QStringLiteral("label_47"));
-        label_47->setStyleSheet(QStringLiteral("border-image: url(:/widget/Z_Lj.png);"));
 
-        formLayout_3->setWidget(9, QFormLayout::SpanningRole, label_47);
+        formLayout_3->setWidget(6, QFormLayout::LabelRole, label_47);
+
+        lineEdit_32 = new QLineEdit(form_widget);
+        lineEdit_32->setObjectName(QStringLiteral("lineEdit_32"));
+
+        formLayout_3->setWidget(6, QFormLayout::FieldRole, lineEdit_32);
+
+        label_24 = new QLabel(form_widget);
+        label_24->setObjectName(QStringLiteral("label_24"));
+        label_24->setStyleSheet(QStringLiteral("border-image: url(:/widget/Z_Hz.png);"));
+
+        formLayout_3->setWidget(7, QFormLayout::SpanningRole, label_24);
+
+        label_58 = new QLabel(form_widget);
+        label_58->setObjectName(QStringLiteral("label_58"));
+
+        formLayout_3->setWidget(8, QFormLayout::LabelRole, label_58);
+
+        lineEdit_33 = new QLineEdit(form_widget);
+        lineEdit_33->setObjectName(QStringLiteral("lineEdit_33"));
+
+        formLayout_3->setWidget(8, QFormLayout::FieldRole, lineEdit_33);
+
+        label_25 = new QLabel(form_widget);
+        label_25->setObjectName(QStringLiteral("label_25"));
+        label_25->setStyleSheet(QStringLiteral("border-image: url(:/widget/Z_Lj.png);"));
+
+        formLayout_3->setWidget(9, QFormLayout::SpanningRole, label_25);
+
+        label_26 = new QLabel(form_widget);
+        label_26->setObjectName(QStringLiteral("label_26"));
+
+        formLayout_3->setWidget(10, QFormLayout::LabelRole, label_26);
+
+        label_27 = new QLabel(form_widget);
+        label_27->setObjectName(QStringLiteral("label_27"));
+        label_27->setStyleSheet(QStringLiteral("border-image: url(:/widget/Z_Gd.png);"));
+
+        formLayout_3->setWidget(11, QFormLayout::SpanningRole, label_27);
+
+        lineEdit = new QLineEdit(form_widget);
+        lineEdit->setObjectName(QStringLiteral("lineEdit"));
+
+        formLayout_3->setWidget(10, QFormLayout::FieldRole, lineEdit);
 
         tabWidget->addTab(tab_widget, QString());
         tab_2 = new QWidget();
@@ -993,93 +998,108 @@ public:
 
         horizontalLayout_19->addItem(horizontalSpacer_23);
 
-        form1_Widget = new QWidget(tab_2);
-        form1_Widget->setObjectName(QStringLiteral("form1_Widget"));
-        form1_Widget->setGeometry(QRect(20, 300, 141, 461));
-        form1_Widget->setStyleSheet(QStringLiteral(""));
-        formLayout_4 = new QFormLayout(form1_Widget);
+        form1_widget = new QWidget(tab_2);
+        form1_widget->setObjectName(QStringLiteral("form1_widget"));
+        form1_widget->setGeometry(QRect(19, 300, 141, 461));
+        formLayout_4 = new QFormLayout(form1_widget);
         formLayout_4->setSpacing(6);
         formLayout_4->setContentsMargins(11, 11, 11, 11);
         formLayout_4->setObjectName(QStringLiteral("formLayout_4"));
-        label_48 = new QLabel(form1_Widget);
+        label_48 = new QLabel(form1_widget);
         label_48->setObjectName(QStringLiteral("label_48"));
 
         formLayout_4->setWidget(0, QFormLayout::LabelRole, label_48);
 
-        lineEdit_19 = new QLineEdit(form1_Widget);
+        lineEdit_19 = new QLineEdit(form1_widget);
         lineEdit_19->setObjectName(QStringLiteral("lineEdit_19"));
 
         formLayout_4->setWidget(0, QFormLayout::FieldRole, lineEdit_19);
 
-        label_2 = new QLabel(form1_Widget);
-        label_2->setObjectName(QStringLiteral("label_2"));
-        label_2->setStyleSheet(QStringLiteral("border-image: url(:/widget/Z_Fd.png);"));
+        label_28 = new QLabel(form1_widget);
+        label_28->setObjectName(QStringLiteral("label_28"));
+        label_28->setStyleSheet(QStringLiteral("border-image: url(:/widget/Z_Fd.png);"));
 
-        formLayout_4->setWidget(1, QFormLayout::SpanningRole, label_2);
+        formLayout_4->setWidget(1, QFormLayout::SpanningRole, label_28);
 
-        label_49 = new QLabel(form1_Widget);
+        label_49 = new QLabel(form1_widget);
         label_49->setObjectName(QStringLiteral("label_49"));
 
         formLayout_4->setWidget(2, QFormLayout::LabelRole, label_49);
 
-        lineEdit_20 = new QLineEdit(form1_Widget);
+        lineEdit_20 = new QLineEdit(form1_widget);
         lineEdit_20->setObjectName(QStringLiteral("lineEdit_20"));
 
         formLayout_4->setWidget(2, QFormLayout::FieldRole, lineEdit_20);
 
-        label = new QLabel(form1_Widget);
-        label->setObjectName(QStringLiteral("label"));
-        label->setStyleSheet(QStringLiteral("border-image: url(:/widget/Z_Zl.png);"));
-
-        formLayout_4->setWidget(3, QFormLayout::SpanningRole, label);
-
-        label_50 = new QLabel(form1_Widget);
+        label_50 = new QLabel(form1_widget);
         label_50->setObjectName(QStringLiteral("label_50"));
+        label_50->setStyleSheet(QStringLiteral("border-image: url(:/widget/Z_Zl.png);"));
 
-        formLayout_4->setWidget(4, QFormLayout::LabelRole, label_50);
+        formLayout_4->setWidget(3, QFormLayout::SpanningRole, label_50);
 
-        lineEdit_21 = new QLineEdit(form1_Widget);
+        label_51 = new QLabel(form1_widget);
+        label_51->setObjectName(QStringLiteral("label_51"));
+
+        formLayout_4->setWidget(4, QFormLayout::LabelRole, label_51);
+
+        lineEdit_21 = new QLineEdit(form1_widget);
         lineEdit_21->setObjectName(QStringLiteral("lineEdit_21"));
 
         formLayout_4->setWidget(4, QFormLayout::FieldRole, lineEdit_21);
 
-        label_3 = new QLabel(form1_Widget);
-        label_3->setObjectName(QStringLiteral("label_3"));
-        label_3->setStyleSheet(QStringLiteral("border-image: url(:/widget/Z_Fs.png);"));
+        label_52 = new QLabel(form1_widget);
+        label_52->setObjectName(QStringLiteral("label_52"));
+        label_52->setStyleSheet(QStringLiteral("border-image: url(:/widget/Z_Fs.png);"));
 
-        formLayout_4->setWidget(5, QFormLayout::SpanningRole, label_3);
+        formLayout_4->setWidget(5, QFormLayout::SpanningRole, label_52);
 
-        label_51 = new QLabel(form1_Widget);
-        label_51->setObjectName(QStringLiteral("label_51"));
+        label_59 = new QLabel(form1_widget);
+        label_59->setObjectName(QStringLiteral("label_59"));
 
-        formLayout_4->setWidget(6, QFormLayout::LabelRole, label_51);
+        formLayout_4->setWidget(6, QFormLayout::LabelRole, label_59);
 
-        lineEdit_22 = new QLineEdit(form1_Widget);
+        lineEdit_22 = new QLineEdit(form1_widget);
         lineEdit_22->setObjectName(QStringLiteral("lineEdit_22"));
 
         formLayout_4->setWidget(6, QFormLayout::FieldRole, lineEdit_22);
 
-        label_4 = new QLabel(form1_Widget);
-        label_4->setObjectName(QStringLiteral("label_4"));
-        label_4->setStyleSheet(QStringLiteral("border-image: url(:/widget/Z_Hz.png);"));
+        label_60 = new QLabel(form1_widget);
+        label_60->setObjectName(QStringLiteral("label_60"));
+        label_60->setStyleSheet(QStringLiteral("border-image: url(:/widget/Z_Hz.png);"));
 
-        formLayout_4->setWidget(7, QFormLayout::SpanningRole, label_4);
+        formLayout_4->setWidget(7, QFormLayout::SpanningRole, label_60);
 
-        label_52 = new QLabel(form1_Widget);
-        label_52->setObjectName(QStringLiteral("label_52"));
+        label_61 = new QLabel(form1_widget);
+        label_61->setObjectName(QStringLiteral("label_61"));
 
-        formLayout_4->setWidget(8, QFormLayout::LabelRole, label_52);
+        formLayout_4->setWidget(8, QFormLayout::LabelRole, label_61);
 
-        lineEdit_23 = new QLineEdit(form1_Widget);
+        lineEdit_23 = new QLineEdit(form1_widget);
         lineEdit_23->setObjectName(QStringLiteral("lineEdit_23"));
 
         formLayout_4->setWidget(8, QFormLayout::FieldRole, lineEdit_23);
 
-        label_5 = new QLabel(form1_Widget);
-        label_5->setObjectName(QStringLiteral("label_5"));
-        label_5->setStyleSheet(QStringLiteral("border-image: url(:/widget/Z_Lj.png);"));
+        label_62 = new QLabel(form1_widget);
+        label_62->setObjectName(QStringLiteral("label_62"));
+        label_62->setStyleSheet(QStringLiteral("border-image: url(:/widget/Z_Lj.png);"));
 
-        formLayout_4->setWidget(9, QFormLayout::SpanningRole, label_5);
+        formLayout_4->setWidget(9, QFormLayout::SpanningRole, label_62);
+
+        label_63 = new QLabel(form1_widget);
+        label_63->setObjectName(QStringLiteral("label_63"));
+
+        formLayout_4->setWidget(10, QFormLayout::LabelRole, label_63);
+
+        label_64 = new QLabel(form1_widget);
+        label_64->setObjectName(QStringLiteral("label_64"));
+        label_64->setStyleSheet(QStringLiteral("border-image: url(:/widget/Z_Gd.png);"));
+
+        formLayout_4->setWidget(11, QFormLayout::SpanningRole, label_64);
+
+        lineEdit_2 = new QLineEdit(form1_widget);
+        lineEdit_2->setObjectName(QStringLiteral("lineEdit_2"));
+
+        formLayout_4->setWidget(10, QFormLayout::FieldRole, lineEdit_2);
 
         tabWidget->addTab(tab_2, QString());
         tab_3 = new QWidget();
@@ -1268,92 +1288,108 @@ public:
 
         horizontalLayout_18->addItem(horizontalSpacer_21);
 
-        form2_Widget = new QWidget(tab_3);
-        form2_Widget->setObjectName(QStringLiteral("form2_Widget"));
-        form2_Widget->setGeometry(QRect(20, 300, 141, 461));
-        formLayout_5 = new QFormLayout(form2_Widget);
+        form2_widget = new QWidget(tab_3);
+        form2_widget->setObjectName(QStringLiteral("form2_widget"));
+        form2_widget->setGeometry(QRect(20, 300, 141, 461));
+        formLayout_5 = new QFormLayout(form2_widget);
         formLayout_5->setSpacing(6);
         formLayout_5->setContentsMargins(11, 11, 11, 11);
         formLayout_5->setObjectName(QStringLiteral("formLayout_5"));
-        label_53 = new QLabel(form2_Widget);
+        label_53 = new QLabel(form2_widget);
         label_53->setObjectName(QStringLiteral("label_53"));
 
         formLayout_5->setWidget(0, QFormLayout::LabelRole, label_53);
 
-        lineEdit_24 = new QLineEdit(form2_Widget);
+        lineEdit_24 = new QLineEdit(form2_widget);
         lineEdit_24->setObjectName(QStringLiteral("lineEdit_24"));
 
         formLayout_5->setWidget(0, QFormLayout::FieldRole, lineEdit_24);
 
-        label_6 = new QLabel(form2_Widget);
-        label_6->setObjectName(QStringLiteral("label_6"));
-        label_6->setStyleSheet(QStringLiteral("border-image: url(:/widget/Z_Fd.png);"));
-
-        formLayout_5->setWidget(1, QFormLayout::SpanningRole, label_6);
-
-        label_54 = new QLabel(form2_Widget);
+        label_54 = new QLabel(form2_widget);
         label_54->setObjectName(QStringLiteral("label_54"));
+        label_54->setStyleSheet(QStringLiteral("border-image: url(:/widget/Z_Fd.png);"));
 
-        formLayout_5->setWidget(2, QFormLayout::LabelRole, label_54);
+        formLayout_5->setWidget(1, QFormLayout::SpanningRole, label_54);
 
-        lineEdit_25 = new QLineEdit(form2_Widget);
+        label_55 = new QLabel(form2_widget);
+        label_55->setObjectName(QStringLiteral("label_55"));
+
+        formLayout_5->setWidget(2, QFormLayout::LabelRole, label_55);
+
+        lineEdit_25 = new QLineEdit(form2_widget);
         lineEdit_25->setObjectName(QStringLiteral("lineEdit_25"));
 
         formLayout_5->setWidget(2, QFormLayout::FieldRole, lineEdit_25);
 
-        label_7 = new QLabel(form2_Widget);
-        label_7->setObjectName(QStringLiteral("label_7"));
-        label_7->setStyleSheet(QStringLiteral("border-image: url(:/widget/Z_Zl.png);"));
+        label_56 = new QLabel(form2_widget);
+        label_56->setObjectName(QStringLiteral("label_56"));
+        label_56->setStyleSheet(QStringLiteral("border-image: url(:/widget/Z_Zl.png);"));
 
-        formLayout_5->setWidget(3, QFormLayout::SpanningRole, label_7);
+        formLayout_5->setWidget(3, QFormLayout::SpanningRole, label_56);
 
-        label_55 = new QLabel(form2_Widget);
-        label_55->setObjectName(QStringLiteral("label_55"));
+        label_57 = new QLabel(form2_widget);
+        label_57->setObjectName(QStringLiteral("label_57"));
 
-        formLayout_5->setWidget(4, QFormLayout::LabelRole, label_55);
+        formLayout_5->setWidget(4, QFormLayout::LabelRole, label_57);
 
-        lineEdit_26 = new QLineEdit(form2_Widget);
+        lineEdit_26 = new QLineEdit(form2_widget);
         lineEdit_26->setObjectName(QStringLiteral("lineEdit_26"));
 
         formLayout_5->setWidget(4, QFormLayout::FieldRole, lineEdit_26);
 
-        label_8 = new QLabel(form2_Widget);
-        label_8->setObjectName(QStringLiteral("label_8"));
-        label_8->setStyleSheet(QStringLiteral("border-image: url(:/widget/Z_Fs.png);"));
+        label_65 = new QLabel(form2_widget);
+        label_65->setObjectName(QStringLiteral("label_65"));
+        label_65->setStyleSheet(QStringLiteral("border-image: url(:/widget/Z_Fs.png);"));
 
-        formLayout_5->setWidget(5, QFormLayout::SpanningRole, label_8);
+        formLayout_5->setWidget(5, QFormLayout::SpanningRole, label_65);
 
-        label_56 = new QLabel(form2_Widget);
-        label_56->setObjectName(QStringLiteral("label_56"));
+        label_66 = new QLabel(form2_widget);
+        label_66->setObjectName(QStringLiteral("label_66"));
 
-        formLayout_5->setWidget(6, QFormLayout::LabelRole, label_56);
+        formLayout_5->setWidget(6, QFormLayout::LabelRole, label_66);
 
-        lineEdit_27 = new QLineEdit(form2_Widget);
+        lineEdit_27 = new QLineEdit(form2_widget);
         lineEdit_27->setObjectName(QStringLiteral("lineEdit_27"));
 
         formLayout_5->setWidget(6, QFormLayout::FieldRole, lineEdit_27);
 
-        label_9 = new QLabel(form2_Widget);
-        label_9->setObjectName(QStringLiteral("label_9"));
-        label_9->setStyleSheet(QStringLiteral("border-image: url(:/widget/Z_Hz.png);"));
+        label_67 = new QLabel(form2_widget);
+        label_67->setObjectName(QStringLiteral("label_67"));
+        label_67->setStyleSheet(QStringLiteral("border-image: url(:/widget/Z_Hz.png);"));
 
-        formLayout_5->setWidget(7, QFormLayout::SpanningRole, label_9);
+        formLayout_5->setWidget(7, QFormLayout::SpanningRole, label_67);
 
-        label_57 = new QLabel(form2_Widget);
-        label_57->setObjectName(QStringLiteral("label_57"));
+        label_68 = new QLabel(form2_widget);
+        label_68->setObjectName(QStringLiteral("label_68"));
 
-        formLayout_5->setWidget(8, QFormLayout::LabelRole, label_57);
+        formLayout_5->setWidget(8, QFormLayout::LabelRole, label_68);
 
-        lineEdit_28 = new QLineEdit(form2_Widget);
+        lineEdit_28 = new QLineEdit(form2_widget);
         lineEdit_28->setObjectName(QStringLiteral("lineEdit_28"));
 
         formLayout_5->setWidget(8, QFormLayout::FieldRole, lineEdit_28);
 
-        label_10 = new QLabel(form2_Widget);
-        label_10->setObjectName(QStringLiteral("label_10"));
-        label_10->setStyleSheet(QStringLiteral("border-image: url(:/widget/Z_Lj.png);"));
+        label_69 = new QLabel(form2_widget);
+        label_69->setObjectName(QStringLiteral("label_69"));
+        label_69->setStyleSheet(QStringLiteral("border-image: url(:/widget/Z_Lj.png);"));
 
-        formLayout_5->setWidget(9, QFormLayout::SpanningRole, label_10);
+        formLayout_5->setWidget(9, QFormLayout::SpanningRole, label_69);
+
+        label_70 = new QLabel(form2_widget);
+        label_70->setObjectName(QStringLiteral("label_70"));
+
+        formLayout_5->setWidget(10, QFormLayout::LabelRole, label_70);
+
+        label_71 = new QLabel(form2_widget);
+        label_71->setObjectName(QStringLiteral("label_71"));
+        label_71->setStyleSheet(QStringLiteral("border-image: url(:/widget/Z_Gd.png);"));
+
+        formLayout_5->setWidget(11, QFormLayout::SpanningRole, label_71);
+
+        lineEdit_3 = new QLineEdit(form2_widget);
+        lineEdit_3->setObjectName(QStringLiteral("lineEdit_3"));
+
+        formLayout_5->setWidget(10, QFormLayout::FieldRole, lineEdit_3);
 
         tabWidget->addTab(tab_3, QString());
         wight->setCentralWidget(centralWidget);
@@ -1407,16 +1443,18 @@ public:
         pushButton_6->setText(QString());
         label_42->setText(QApplication::translate("wight", "\350\247\206\351\242\221\347\233\221\346\216\247", Q_NULLPTR));
         toolButton_3->setText(QApplication::translate("wight", "\346\225\260\346\215\256", Q_NULLPTR));
-        label_24->setText(QApplication::translate("wight", "  \345\271\205\345\272\246:", Q_NULLPTR));
+        label_44->setText(QApplication::translate("wight", "    \345\271\205\345\272\246:", Q_NULLPTR));
+        label_11->setText(QString());
+        label_45->setText(QApplication::translate("wight", "    \351\207\215\351\207\217:", Q_NULLPTR));
+        label_14->setText(QString());
+        label_46->setText(QApplication::translate("wight", "    \351\243\216\351\200\237:", Q_NULLPTR));
         label_23->setText(QString());
-        label_25->setText(QApplication::translate("wight", "  \351\207\215\351\207\217:", Q_NULLPTR));
-        label_26->setText(QString());
-        label_27->setText(QApplication::translate("wight", "  \351\243\216\351\200\237:", Q_NULLPTR));
-        label_28->setText(QString());
-        label_44->setText(QApplication::translate("wight", "  \345\233\236\350\275\254:", Q_NULLPTR));
-        label_45->setText(QString());
-        label_46->setText(QApplication::translate("wight", "  \345\212\233\347\237\251:", Q_NULLPTR));
-        label_47->setText(QString());
+        label_47->setText(QApplication::translate("wight", "    \345\233\236\350\275\254:", Q_NULLPTR));
+        label_24->setText(QString());
+        label_58->setText(QApplication::translate("wight", "    \345\212\233\347\237\251:", Q_NULLPTR));
+        label_25->setText(QString());
+        label_26->setText(QApplication::translate("wight", "    \351\253\230\345\272\246\357\274\232", Q_NULLPTR));
+        label_27->setText(QString());
         tabWidget->setTabText(tabWidget->indexOf(tab_widget), QApplication::translate("wight", "\346\234\254\346\234\272\347\233\221\346\216\247", Q_NULLPTR));
         label_35->setText(QApplication::translate("wight", "TextLabel", Q_NULLPTR));
         pushButton_10->setText(QString());
@@ -1428,16 +1466,18 @@ public:
         pushButton_9->setText(QString());
         label_43->setText(QApplication::translate("wight", "\345\241\224\346\234\272\350\277\220\350\241\214\350\247\206\351\242\221\347\233\221\346\216\247", Q_NULLPTR));
         pushButton->setText(QApplication::translate("wight", "\346\225\260\346\215\256", Q_NULLPTR));
-        label_48->setText(QApplication::translate("wight", "  \345\271\205\345\272\246:", Q_NULLPTR));
-        label_2->setText(QString());
-        label_49->setText(QApplication::translate("wight", "  \351\207\215\351\207\217:", Q_NULLPTR));
-        label->setText(QString());
-        label_50->setText(QApplication::translate("wight", "  \351\243\216\351\200\237:", Q_NULLPTR));
-        label_3->setText(QString());
-        label_51->setText(QApplication::translate("wight", "  \345\233\236\350\275\254:", Q_NULLPTR));
-        label_4->setText(QString());
-        label_52->setText(QApplication::translate("wight", "  \345\212\233\347\237\251:", Q_NULLPTR));
-        label_5->setText(QString());
+        label_48->setText(QApplication::translate("wight", "    \345\271\205\345\272\246:", Q_NULLPTR));
+        label_28->setText(QString());
+        label_49->setText(QApplication::translate("wight", "    \351\207\215\351\207\217:", Q_NULLPTR));
+        label_50->setText(QString());
+        label_51->setText(QApplication::translate("wight", "    \351\243\216\351\200\237:", Q_NULLPTR));
+        label_52->setText(QString());
+        label_59->setText(QApplication::translate("wight", "    \345\233\236\350\275\254:", Q_NULLPTR));
+        label_60->setText(QString());
+        label_61->setText(QApplication::translate("wight", "    \345\212\233\347\237\251:", Q_NULLPTR));
+        label_62->setText(QString());
+        label_63->setText(QApplication::translate("wight", "    \351\253\230\345\272\246\357\274\232", Q_NULLPTR));
+        label_64->setText(QString());
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("wight", "\345\241\224\346\234\272\347\276\244\347\233\221\346\216\247", Q_NULLPTR));
         label_40->setText(QApplication::translate("wight", "TextLabel", Q_NULLPTR));
         pushButton_15->setText(QString());
@@ -1449,16 +1489,18 @@ public:
         pushButton_14->setText(QString());
         label_41->setText(QApplication::translate("wight", "\345\241\224\346\234\272\350\277\220\350\241\214\350\247\206\351\242\221\347\233\221\346\216\247", Q_NULLPTR));
         pushButton_16->setText(QApplication::translate("wight", "\346\225\260\346\215\256", Q_NULLPTR));
-        label_53->setText(QApplication::translate("wight", "  \345\271\205\345\272\246:", Q_NULLPTR));
-        label_6->setText(QString());
-        label_54->setText(QApplication::translate("wight", "  \351\207\215\351\207\217:", Q_NULLPTR));
-        label_7->setText(QString());
-        label_55->setText(QApplication::translate("wight", "  \351\243\216\351\200\237:", Q_NULLPTR));
-        label_8->setText(QString());
-        label_56->setText(QApplication::translate("wight", "  \345\233\236\350\275\254:", Q_NULLPTR));
-        label_9->setText(QString());
-        label_57->setText(QApplication::translate("wight", "  \345\212\233\347\237\251:", Q_NULLPTR));
-        label_10->setText(QString());
+        label_53->setText(QApplication::translate("wight", "    \345\271\205\345\272\246:", Q_NULLPTR));
+        label_54->setText(QString());
+        label_55->setText(QApplication::translate("wight", "    \351\207\215\351\207\217:", Q_NULLPTR));
+        label_56->setText(QString());
+        label_57->setText(QApplication::translate("wight", "    \351\243\216\351\200\237:", Q_NULLPTR));
+        label_65->setText(QString());
+        label_66->setText(QApplication::translate("wight", "    \345\233\236\350\275\254:", Q_NULLPTR));
+        label_67->setText(QString());
+        label_68->setText(QApplication::translate("wight", "    \345\212\233\347\237\251:", Q_NULLPTR));
+        label_69->setText(QString());
+        label_70->setText(QApplication::translate("wight", "    \351\253\230\345\272\246\357\274\232", Q_NULLPTR));
+        label_71->setText(QString());
         tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("wight", "\351\230\262\344\272\222\346\222\236\347\233\221\346\216\247", Q_NULLPTR));
     } // retranslateUi
 
