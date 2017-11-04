@@ -592,7 +592,6 @@ public:
 
         horizontalLayout_4->addWidget(pushButton_5);
 
-        S2_widget->raise();
 
         gridLayout->addWidget(frame_2, 0, 1, 2, 1);
 
@@ -655,15 +654,13 @@ public:
 
         horizontalLayout_5->addWidget(pushButton_6);
 
-        S3_widget->raise();
 
         gridLayout->addWidget(frame_3, 2, 0, 2, 1);
 
         verticalWidget = new QWidget(tab_widget);
         verticalWidget->setObjectName(QStringLiteral("verticalWidget"));
         verticalWidget->setGeometry(QRect(150, 0, 581, 311));
-        verticalWidget->setStyleSheet(QLatin1String("background-color: rgb(211, 215, 207);\n"
-""));
+        verticalWidget->setStyleSheet(QStringLiteral(""));
         verticalLayout_4 = new QVBoxLayout(verticalWidget);
         verticalLayout_4->setSpacing(6);
         verticalLayout_4->setContentsMargins(11, 11, 11, 11);
@@ -1370,7 +1367,7 @@ public:
 
         retranslateUi(wight);
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(2);
 
 
         QMetaObject::connectSlotsByName(wight);

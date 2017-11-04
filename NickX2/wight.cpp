@@ -81,6 +81,23 @@ void wight::initFrom()  //界面初始化
     ui->form1_Widget->setStyleSheet(tr("QWidget#form1_Widget{border-image: url(:/widget/Z_Ck.png);}"));
     ui->form2_Widget->setStyleSheet(tr("QWidget#form2_Widget{border-image: url(:/widget/Z_Ck.png);}"));
 
+    ui->lineEdit_14->setStyleSheet(tr("QLineEdit#lineEdit_14{background-color:rgba(255,255,255,0%)}"));
+    ui->lineEdit_15->setStyleSheet(tr("QLineEdit#lineEdit_15{background-color:rgba(255,255,255,0%)}"));
+    ui->lineEdit_16->setStyleSheet(tr("QLineEdit#lineEdit_16{background-color:rgba(255,255,255,0%)}"));
+    ui->lineEdit_17->setStyleSheet(tr("QLineEdit#lineEdit_17{background-color:rgba(255,255,255,0%)}"));
+    ui->lineEdit_18->setStyleSheet(tr("QLineEdit#lineEdit_18{background-color:rgba(255,255,255,0%)}"));
+    ui->lineEdit_19->setStyleSheet(tr("QLineEdit#lineEdit_19{background-color:rgba(255,255,255,0%)}"));
+    ui->lineEdit_20->setStyleSheet(tr("QLineEdit#lineEdit_20{background-color:rgba(255,255,255,0%)}"));
+    ui->lineEdit_21->setStyleSheet(tr("QLineEdit#lineEdit_21{background-color:rgba(255,255,255,0%)}"));
+    ui->lineEdit_22->setStyleSheet(tr("QLineEdit#lineEdit_22{background-color:rgba(255,255,255,0%)}"));
+    ui->lineEdit_23->setStyleSheet(tr("QLineEdit#lineEdit_23{background-color:rgba(255,255,255,0%)}"));
+    ui->lineEdit_24->setStyleSheet(tr("QLineEdit#lineEdit_24{background-color:rgba(255,255,255,0%)}"));
+    ui->lineEdit_25->setStyleSheet(tr("QLineEdit#lineEdit_25{background-color:rgba(255,255,255,0%)}"));
+    ui->lineEdit_26->setStyleSheet(tr("QLineEdit#lineEdit_26{background-color:rgba(255,255,255,0%)}"));
+    ui->lineEdit_27->setStyleSheet(tr("QLineEdit#lineEdit_27{background-color:rgba(255,255,255,0%)}"));
+    ui->lineEdit_28->setStyleSheet(tr("QLineEdit#lineEdit_28{background-color:rgba(255,255,255,0%)}"));
+
+
 
     ui->tbtitle->setStyleSheet(tr("QToolButton#tbtitle{border-image: url(:/icon/Z_An.png);}"));
      QPalette pal;
